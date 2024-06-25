@@ -13,14 +13,14 @@ function distanceFromHqInFeet(block) {
 }
 
 
-{function distanceTravelledInFeet(start, end) {
+function distanceTravelledInFeet(start, end) {
     const distanceInBlocks = Math.abs(end - start);
     const distanceInFeet = distanceInBlocks * 264;
     return distanceInFeet;
-  }
-
-   
 }
+
+
+
 function calculatesFarePrice(start, destination) {
     const distanceInFeet = Math.abs(destination - start) * 264; 
     if (distanceInFeet <= 400) {
